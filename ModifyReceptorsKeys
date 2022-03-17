@@ -1,0 +1,130 @@
+As you know, making receptors or keys in mania is REALLY ANNOYING. Why? Because it's either stretched or squished in the gameplay. You know, something like this?
+
+![screenshot062](https://user-images.githubusercontent.com/55966752/158535541-8825cca0-ed64-40e6-8324-7065b3511613.jpg)
+
+The size of the receptor I'm using is 320px x 300px, the same as the note's size too!
+
+Now you probably think that it's probably hard to adjust this, but nope it isn't at all. So, let me show you how I'm gonna make it look like this:
+
+![screenshot064](https://user-images.githubusercontent.com/55966752/158536890-85d1c60b-1aed-4837-bce2-1d66c54cd32b.jpg)
+
+## DISCLAIMER
+
+The assets that I use for the notes and receptors all have the same size and are perfect in shape and pixel. These steps are still applicable to those noteskins which are already modified. However, I recommend using a perfect size of receptors and then modify them later as they maintain better quality than the modified ones.
+
+## Step 1: Preparation and Set-up
+
+Use the newly made receptors for the game (I will be using a modified pl0x arrow receptor in this one and use 4k.) and set them in your skin.ini directory. For me, I made a new folder in the skin folder and rename it to `Mania` and put all mania elements inside there. Here's my `Mania` folder and what I have set in my `skin.ini`:
+
+Mania Folder:
+
+![image](https://user-images.githubusercontent.com/55966752/158539876-bbf09042-fbd1-46a5-b0ff-538c0c67f787.png)
+
+Skin.ini:
+
+![image](https://user-images.githubusercontent.com/55966752/158539104-8a7d017c-d404-4cb3-9ee5-7c766cb0e407.png)
+![image](https://user-images.githubusercontent.com/55966752/158539232-374e586e-c3fa-46b2-b871-b69b9af04728.png)
+
+After setting this up, do not forget to edit the value `JudgementLine` and `KeysUnderNotes` to 1. This is very important as it will tell us where's the hitposition placed in game. You can use whatever hitposition you like, however I will be using `HitPosition: 468` in this one. 
+
+## Step 2: Modifying the Size of Receptors
+
+Go back into the game and refresh the skin by pressing `CTRL + ALT + SHIFT + S`. Go to settings first and set your score meter type to `None` especially if your hitposition is like around 450 and above.
+
+![image](https://user-images.githubusercontent.com/55966752/158541107-b1a9baf8-6a09-426b-b4cc-e0cc82b5444c.png)
+
+After doing this, let's go test the elements in game. Simply put Autoplay on and check any map on which key set you're modifying. I will be using 4k in this one.
+
+![screenshot065](https://user-images.githubusercontent.com/55966752/158541467-54324b25-3b8d-40f3-9e4d-e445a6b89b69.jpg)
+
+Now, you see that the new elements in game are, as not as what you think it'll become just by putting them in the skin folder and setting them up. That's not how it works in osu!mania sadly, but no worries! It's simple to fix this kind of stuff.
+
+First, let's screenshot the gameplay first and open it. You may leave the autoplay after making a screenshot.
+
+Second, let's use an image editing software. (I will be using Adobe Photoshop in this one. For those who don't have Photoshop, I recommend using [Photopea](https://www.photopea.com), [paint.net](https://www.getpaint.net/download.html), or [GIMP](https://www.gimp.org))
+
+Then we drag the gameplay image in Photoshop to view it.
+
+![image](https://user-images.githubusercontent.com/55966752/158543266-6ec1958c-2cf9-40de-8a84-ec6c62b8b22c.png)
+
+Now what do we do next? Let's use the Rectangle Tool to measure the note size and receptor size.
+
+![image](https://user-images.githubusercontent.com/55966752/158543484-5e1031c3-bb5c-41b0-ab54-d73354bc271f.png)
+
+As you can see above, the note size is 99px x 99px.
+
+![image](https://user-images.githubusercontent.com/55966752/158543809-a572095b-099d-49ea-863b-e378c66cf931.png)
+
+As for the receptors, its size is 99px x 300px.
+
+Now we've got our measurements, let's go to third, which is to modify the size of the receptors. Open all the receptors you use in Photoshop. In my case, I only have to open one and then I can adjust other receptors later.
+
+Note: I used a color fill layer because the key image has 50% opacity so I can see better.
+
+![image](https://user-images.githubusercontent.com/55966752/158544719-50cdbdb2-dc21-4c63-b7bd-feca847f53e6.png)
+
+Right click the receptor layer, and convert it to smart object:
+
+![image](https://user-images.githubusercontent.com/55966752/158558287-d73f457f-9e42-46f4-900a-e65b0bc12893.png)
+
+The reason why we have to convert it to smart object is because we can keep its quality if we squish or stretch the image.
+
+Next, as we have seen that the note's height in game is 99, we will change the height of our receptor here from 300 to 99.
+
+![image](https://user-images.githubusercontent.com/55966752/158725772-ef73cdac-40e5-4a68-a332-80a94ae10b36.png)
+
+After doing this, remove the color fill layer and save the file and refresh the skin in game. (You can do the same with the other receptors for arrows, but it's better to do one receptor first and then modify the other arrow receptors later if it suits well.)
+
+Don't forget to edit the key-down or the pressed key element to be modified too.
+
+Here's the result:
+
+![image](https://user-images.githubusercontent.com/55966752/158726612-fdee4c42-3935-4dfd-9590-9932ae98765c.png)
+
+As you can see, the receptor is now the exactly the same size as the note. Now we do the same with the other receptors, and voila! (Don't forget to convert them to Smart Object first before modifying them!)
+
+![screenshot069](https://user-images.githubusercontent.com/55966752/158727266-29f4c369-0794-49e8-b42e-6f9f82f08bf2.jpg)
+
+We are done with modifying the receptor size! However, the hitposition is really far from it, and that means we'll have to move the receptors in the canvas too. Let's move to step 3.
+
+## Step 3: Moving the Receptor position.
+
+This is my method of moving the receptors to the hitposition. To be honest, I think this method is kinda scuffed, but it works so it ain't that scuffed :P
+
+Let's open the previous image in Photoshop and zoom in to the receptors and hitposition:
+
+![image](https://user-images.githubusercontent.com/55966752/158727819-f803b0c2-24c4-465b-b002-0e824ee674bb.png)
+
+Then, let's use Rectangle Tool, we'll use it to measure the space between the receptors and the hitposition given by the `JudgementLine` in the skin.ini.
+
+![image](https://user-images.githubusercontent.com/55966752/158728105-f402f838-c591-4e66-aba3-a7f6d6163e6b.png)
+
+Now, you see that the space between the receptors and hitposition is 81 pixels, that means we'll adjust the position of the receptors elements by 81 pixels downwards. Let's go back to our receptor elements again.
+
+![image](https://user-images.githubusercontent.com/55966752/158728402-08486bbc-bb98-4c20-a08d-63c3c628dba4.png)
+
+What we do next is that, we check the Y position of the element in the Properties Panel, which is this: 
+
+![image](https://user-images.githubusercontent.com/55966752/158728550-8de16f51-1853-42cb-a31a-8a3195a3e552.png)
+
+The Y position value is 101. Since the gap is 81 the last time we measured it, we'll add that value to our Y position, which results to 182. (Don't forget to do the same with the key-down element!)
+
+![image](https://user-images.githubusercontent.com/55966752/158728725-15df98a3-77f1-4bc9-a4d1-55b6f4023492.png)
+
+After doing this, save the file. Refresh the skin in game and check out the result.
+
+![screenshot070](https://user-images.githubusercontent.com/55966752/158728923-605e40f8-7e3c-49a9-9b2d-9ccc33713391.jpg)
+
+Let's check it in Photoshop too if it's the right position.
+
+![image](https://user-images.githubusercontent.com/55966752/158729038-86be8b75-6aad-40d8-9db4-be0bfc33db45.png)
+
+It actually is! Now let's do the same with the other receptors, and refresh the skin in game.
+
+Here's the result:
+
+![screenshot071](https://user-images.githubusercontent.com/55966752/158729195-a12a8985-69ba-41dc-b833-bda5a5d1807e.jpg)
+
+Now that we are done, we can now set our `JudgementLine` and `KeysUnderNotes` to 0 and now you can enjoy having a proper receptor skin in game.
+
+If you have any questions, you can message me in my Twitter or Discord. It's in my README file. As always, have fun playing the game!
